@@ -1,0 +1,162 @@
+body{
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    /* background-image: url(Assets/netflix_bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat; */
+}
+
+/* filter property */
+
+.netflix_bg{
+    width: 550px;
+    /* filter: brightness(40%); */
+
+    /* filter: grayscale(0.5); */
+
+    /* filter: contrast(75%); */
+
+    /* filter:opacity(75%); */
+
+
+    /* object-fit: cover;
+    border: 1px solid lightgray;
+    padding: 10px;
+    border-radius: 14px;
+    margin: 100px auto; */
+}
+
+.netflix-img{
+    width: 100%;
+    border-radius: 14px;
+    filter:blur(3px);
+}
+
+.demo{
+    /* margin: 100px auto; */
+    width: 300px;
+    padding: 10px;
+    background-color: blueviolet;
+    color: black;
+    border-radius: 14px;
+    /* transform: scale(0.5); */
+
+    /* transform: rotate(45deg); */
+
+    /* transform: skew(10deg); */
+
+    transform: translate(50px, 50px);
+}
+.demo1{
+    width: 300px;
+    padding: 10px;
+    background-color: orangered;
+    color: black;
+    border-radius: 14px;
+}
+
+.pseudocls{
+    width: 700px;
+    margin: auto;
+}
+
+/* pseudo elements
+
+::first-line
+::first-letter
+::selection
+::before
+::after
+
+
+*/
+
+.h1cls::first-line{
+    color: blueviolet;
+}
+
+.h1cls::first-letter{
+    font-size: 48px;
+    color: orangered;
+}
+
+.h1cls::selection{
+    background-color: black;
+    color: red;
+}
+.h1cls::before{
+    content: "Guddu!! ";
+
+}
+
+.h1cls::after{
+    content: " Chintu!! ";
+
+}
+
+/* pseudo classes
+
+:hover
+:focus
+:active
+:first-child
+:last-child
+:nth-child()
+:not()
+
+*/
+
+.netflix-img:hover{
+    filter:blur(0);
+    border-radius: 14px;
+    cursor: pointer;
+}
+
+.inputcls{
+    padding: 10px 16px;
+    font-size: 16px;
+    border-radius: 8px;
+    border:1px solid lightgray;
+}
+
+
+.inputcls:focus{
+    outline:none;
+    border:1px solid blueviolet;
+}
+
+.btncls:active{
+    padding: 10px 16px;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    background-color: orangered;
+    color: lightgray;
+
+}
+
+.btncls{
+    padding: 10px 16px;
+    border: 1px solid lightgray;
+    border-radius: 14px;
+    background-color: lightgray;
+    color: orangered; 
+}
+
+p:first-child{
+    color: orangered;
+}
+
+p:last-child{
+    color: blueviolet;
+}
+
+p:nth-child(4n){
+    color: brown;
+}
+
+:not(p){
+    color:gray;
+}
+
+
+
